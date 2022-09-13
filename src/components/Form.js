@@ -1,7 +1,12 @@
 import React, { useState, useRef } from 'react';
+
+// Sevices
 import { postData } from '../services/postData';
 
+// React toastify
 import { toast } from 'react-toastify';
+
+// Helpers
 import { checkDuplicate } from '../helper/checkDuplicate';
 
 const Form = ({data , setData}) => {
@@ -27,6 +32,7 @@ const Form = ({data , setData}) => {
             postData(url)
                 .then(res=> {
                     setData(prevData=> [...prevData , res])
+                    localStorage.setItem("urlList" ,JSON.stringify([...data, res]))
                     console.log(data);
                     toast.update(toastId.current, { render: "Shorten link created!", type: "success", isLoading: false, autoClose: 5000, theme: 'colored'});
                 })

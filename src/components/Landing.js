@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
-import Form from './components/Form';
+
+// React toastify
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import List from './components/List';
+
+// Components
+import List from './List';
+import Form from './Form';
+
+
+
+
 
 const Landing = () => {
 
-    const [data , setData]= useState([])
+    const [data , setData]= useState(()=>{
+        let iniData=[]
+        if(localStorage.getItem('urlList')){
+            let localData=JSON.parse(localStorage.getItem('urlList'))
+            iniData=[...localData]
+        }
+        return iniData
+    })
 
 
     return (

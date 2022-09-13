@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components
 import Item from './shared/Item';
 
 const List = ({data}) => {
