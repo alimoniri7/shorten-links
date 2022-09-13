@@ -1,0 +1,77 @@
+@import '../../helper/colors';
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1400px;
+    padding: 1.5rem 0rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    >div {
+        display: flex;
+    }
+}
+
+.desktopMenu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    li {
+        font-size: .8rem;
+        color: $GrayisViolet;
+        cursor: pointer;
+        &:hover {
+            color: $DarkBlue;
+        }
+    }
+}
+
+.logo {
+    margin-right: 2.5rem;
+    img {
+        width: 110px;
+    }
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    button {
+        font-size: .8rem;
+        &:last-child {
+            padding: .4rem 1.1rem;
+            background-color: $Cyan;
+            border-radius: 1000px;
+            color: #fff;
+        }
+        &:first-child {
+            color: $GrayisViolet;
+            &:hover {
+                color: $DarkViolet;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+    .logo {
+        margin-right: 1.5rem;
+        img {
+            width: 90px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .rightContainer {
+        display: none !important;
+    }
+    .desktopMenu {
+        display: none;
+    }
+}

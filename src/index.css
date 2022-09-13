@@ -1,0 +1,25 @@
+@font-face {
+    font-family: popinsR;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+* {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    font-family: popinsR;
+    font-weight: normal;
+    font-size: 18px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-indent: 0;
+    font-weight: 500, 700;
+    box-sizing: border-box;
+    color: hsl(260, 8%, 14%);
+}
+
+button {
+    cursor: pointer;
+}
