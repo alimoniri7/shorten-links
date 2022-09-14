@@ -7,6 +7,7 @@ import styles from './navbar.module.scss'
 import logo from '../../Assets/svg/logo.svg'
 import { useState } from 'react';
 import BurgerMenu from './BurgerMenu';
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
     const [isMenuOpen , setIsMenuOpen] = useState(false)
@@ -27,6 +28,7 @@ const Navbar = () => {
                 <button>Sign Up</button>
             </div>
             <BurgerMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            <MobileMenu  isMenuOpen={isMenuOpen} />
         </nav>
     );
 };
