@@ -9,7 +9,7 @@ const Menu= styled.ul`
     display: none;
     flex-direction: column;
     width: 100%;
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     background-color: hsl(257, 27%, 26%);
     /* padding: 1.3rem 0; */
     height: ${props=> props.isMenuOpen ? '370px' : '0'};
@@ -18,6 +18,9 @@ const Menu= styled.ul`
     transition: all .2s linear;
     position: relative;
     overflow: hidden;
+    *{
+        font-weight: 600;
+    }
     div{
         position: relative;
         width: 90%;

@@ -20,6 +20,7 @@
     li {
         font-size: .8rem;
         color: $GrayisViolet;
+        font-weight: 600;
         cursor: pointer;
         &:hover {
             color: $DarkBlue;
@@ -48,6 +49,7 @@
         }
         &:first-child {
             color: $GrayisViolet;
+            font-weight: 600;
             &:hover {
                 color: $DarkViolet;
             }

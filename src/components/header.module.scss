@@ -1,0 +1,125 @@
+@import '../helper/colors';
+.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 4rem;
+    width: 45%;
+    h1 {
+        font-size: 4rem;
+        line-height: 80px;
+        font-weight: 900 !important;
+        color: $DarkBlue;
+    }
+    p {
+        font-size: 1.1rem;
+        color: $Gray;
+        font-weight: 100 !important;
+    }
+}
+
+.poster {
+    width: 45%;
+    background: url(../Assets/svg/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 485px;
+    background-position: left top;
+}
+
+.blueButton {
+    margin-top: 2rem;
+    padding: 0.65rem 2.5rem;
+    background-color: $Cyan;
+    border-radius: 1000px;
+    color: #fff;
+    font-weight: 600;
+    font-size: .9rem;
+    &:hover {
+        opacity: .6;
+    }
+}
+
+@media (max-width: 1200px) {
+    .leftContainer {
+        padding-right: 2rem;
+        h1 {
+            font-size: 3rem;
+            line-height: 60px;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .blueButton {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .poster {
+        height: 300px;
+        background-size: cover;
+        background-position: left;
+    }
+    .leftContainer {
+        width: 50%;
+        h1 {
+            font-size: 2.2rem;
+            line-height: 40px;
+        }
+        p {
+            font-size: .8rem;
+            margin-top: .2rem;
+        }
+    }
+    .blueButton {
+        font-size: .8rem;
+        padding: .4rem 1.8rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .poster {
+        width: 95%;
+        height: 350px;
+        margin-left: auto;
+        background-size: cover;
+    }
+    .leftContainer {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        h1 {
+            font-size: 2.55rem;
+            margin: 1.5rem auto 0 auto;
+            line-height: 50px;
+            text-align: center;
+            letter-spacing: -2px;
+        }
+        p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: .6rem;
+        }
+    }
+    .blueButton {
+        padding: .8rem 3rem;
+        font-size: 1rem;
+        margin: 1rem auto 0;
+    }
+}
