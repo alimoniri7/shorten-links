@@ -8,12 +8,13 @@ import styles from './mobileMenu.module.scss'
 const Menu= styled.ul`
     display: none;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
-    /* margin: 1rem auto; */
+    margin: 0rem auto;
     background-color: hsl(257, 27%, 26%);
     /* padding: 1.3rem 0; */
-    height: ${props=> props.isMenuOpen ? '370px' : '0'};
-    justify-content: center;
+    height: ${props=> props.isMenuOpen ? '410px' : '0'};
     border-radius: .6rem;
     transition: all .2s linear;
     position: relative;
@@ -33,9 +34,11 @@ const Menu= styled.ul`
     button{
         font-size: 1rem;
         color: #fff;
-        padding: 1rem 0;
+        padding: 1.1rem 0;
         width: 100%;
         text-align: center;
+
+        
     }
     @media (max-width : 600px) {
         display: flex;

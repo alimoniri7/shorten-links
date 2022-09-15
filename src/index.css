@@ -17,7 +17,7 @@
     text-indent: 0;
     font-weight: 500, 700;
     box-sizing: border-box;
-    color: hsl(260, 8%, 14%);
+    /* color: hsl(260, 8%, 14%); */
 }
 
 button {

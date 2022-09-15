@@ -9,6 +9,9 @@ import { toast } from 'react-toastify';
 // Helpers
 import { checkDuplicate } from '../helper/checkDuplicate';
 
+// Styles
+import styles from './form.module.scss'
+
 const Form = ({data , setData}) => {
 
     const [url , setUrl] = useState('')
@@ -74,12 +77,9 @@ const Form = ({data , setData}) => {
 
 
     return (
-        <form onSubmit={submitHandler} >
-            <div>
-                <input type="text" placeholder='Shorten a link here...' value={url} onChange={inputHandler} />
-                <button type='submit'>Shorten It!</button>
-            </div>
-            <span></span>
+        <form onSubmit={submitHandler} className={styles.container} >
+            <input type="text" placeholder='Shorten a link here...' value={url} onChange={inputHandler} className={styles.input} />
+            <button type='submit' className={styles.button} >Shorten It!</button>
         </form>
     );
 };
