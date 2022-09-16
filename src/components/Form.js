@@ -77,10 +77,12 @@ const Form = ({data , setData}) => {
 
 
     return (
-        <form onSubmit={submitHandler} className={styles.container} >
-            <input type="text" placeholder='Shorten a link here...' value={url} onChange={inputHandler} className={styles.input} />
-            <button type='submit' className={styles.button} >Shorten It!</button>
-        </form>
+        <div className={styles.topContainer} >
+            <form onSubmit={submitHandler} className={styles.container} >
+                <input type="text" placeholder='Shorten a link here...' value={url} onChange={inputHandler} className={styles.input} />
+                <button type='submit' className={styles.button} >Shorten It!</button>
+            </form>
+        </div>
     );
 };
 

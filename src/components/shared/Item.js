@@ -1,9 +1,14 @@
 import React from 'react';
+
+// helper
 import { copier } from '../../helper/copier';
+
+// styles
+import styles from './item.module.scss'
 
 const Item = ({originalLink, shortenLink}) => {
     return (
-        <li>
+        <li className={styles.itemContainer} >
             <p>{originalLink}</p>
             <div>
                 <a href={shortenLink}>{shortenLink}</a>

@@ -8,6 +8,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import List from './List';
 import Form from './Form';
 
+// Styles
+import styles from './landing.module.scss'
+
 
 
 
@@ -25,7 +28,7 @@ const Landing = () => {
 
 
     return (
-        <main>
+        <main className={styles.mainSection} >
             <Form data={data} setData={setData} />
             {data.length!==0 && <List data={data} /> }
             <ToastContainer />

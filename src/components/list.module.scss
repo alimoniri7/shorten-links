@@ -1,0 +1,23 @@
+@import '../helper/colors';
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .8rem;
+    width: 80%;
+    max-width: 1400px;
+    margin: 5.5rem auto 0;
+}
+
+@media (max-width: 900px) {
+    .listContainer {
+        width: 90%;
+        margin: 3rem auto 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .listContainer {
+        margin-top: 7rem;
+    }
+}
