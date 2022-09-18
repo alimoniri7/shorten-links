@@ -7,10 +7,11 @@ import 'react-toastify/dist/ReactToastify.css';
 // Components
 import List from './List';
 import Form from './Form';
+import FeatureSec from './featureSection/FeatureSec';
+import BoostSec from './BoostSec';
 
 // Styles
 import styles from './landing.module.scss'
-import FeatureSec from './featureSection/FeatureSec';
 
 
 
@@ -30,11 +31,13 @@ const Landing = () => {
 
     return (
         <main className={styles.mainSection} >
+            
             <Form data={data} setData={setData} />
             {data.length!==0 && <List data={data} /> }
 
             <FeatureSec/>
             <ToastContainer />
+            <BoostSec/>
         </main>
     );
 };
