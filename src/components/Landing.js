@@ -10,6 +10,7 @@ import Form from './Form';
 
 // Styles
 import styles from './landing.module.scss'
+import FeatureSec from './featureSection/FeatureSec';
 
 
 
@@ -31,6 +32,8 @@ const Landing = () => {
         <main className={styles.mainSection} >
             <Form data={data} setData={setData} />
             {data.length!==0 && <List data={data} /> }
+
+            <FeatureSec/>
             <ToastContainer />
         </main>
     );

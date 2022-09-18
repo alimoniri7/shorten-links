@@ -1,0 +1,36 @@
+@import '../../helper/colors';
+.boxesContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 330px;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 5.5rem;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        background-color: $Cyan;
+        top: 50%;
+        left: 0;
+    }
+}
+
+@media (max-width:600px) {
+    .boxesContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+        gap: 5rem;
+        &::after {
+            width: 8px;
+            height: 800px;
+            left: 50%;
+            top: 0;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../helper/colors';
+.boxContainer {
+    width: 30%;
+    padding: 1rem;
+    position: relative;
+    background-color: #fff;
+}
+
+.icon {
+    position: absolute;
+    top: -2.25rem;
+    left: 2rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: $Violet;
+    img {
+        width: 40px;
+    }
+}
+
+.title {
+    font-weight: 900;
+    color: $DarkBlue;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.description {
+    margin-top: .9rem;
+    font-size: .8rem;
+    color: $GrayisViolet;
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: .8rem;
+        margin-top: 1.5rem;
+    }
+    .description {
+        font-size: .6rem;
+        margin-top: .5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .icon {
+        left: 40%;
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .description {
+        font-size: .9rem;
+        text-align: center;
+        margin-top: .9rem;
+    }
+}

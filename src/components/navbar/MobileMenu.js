@@ -9,7 +9,7 @@ const Menu= styled.ul`
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     margin: 0rem auto;
     background-color: hsl(257, 27%, 26%);
@@ -29,6 +29,13 @@ const Menu= styled.ul`
         
         &:first-child{
             border-bottom:1px solid #ffffff51;
+            li{
+                &:first-child{
+                    button{
+                        padding-top: 0;
+                    }
+                }
+            }
         }
     }
     button{
