@@ -17,6 +17,7 @@
     text-indent: 0;
     font-weight: 500, 700;
     box-sizing: border-box;
+    transition: all .2s ease;
     /* color: hsl(260, 8%, 14%); */
 }
 
