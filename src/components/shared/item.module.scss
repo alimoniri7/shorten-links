@@ -23,20 +23,33 @@
     a {
         color: $Cyan;
     }
-    input {
-        width: 90px;
-        text-align: center;
-        padding: 0.4rem 0rem;
-        background-color: $Cyan;
-        color: #fff;
-        font-weight: 600;
-        border-radius: 5px;
-        font-size: .8rem;
-        cursor: pointer;
-        &:hover {
-            opacity: .6;
-        }
+}
+
+.btn {
+    width: 90px;
+    text-align: center;
+    padding: 0.4rem 0rem;
+    background-color: $Cyan;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: .8rem;
+    cursor: pointer;
+    &:hover {
+        opacity: .6;
     }
+}
+
+.btnDark {
+    width: 90px;
+    text-align: center;
+    padding: 0.4rem 0rem;
+    background-color: $DarkViolet;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: .8rem;
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -61,10 +74,6 @@
             align-items: flex-start;
             gap: .7rem;
         }
-        input {
-            width: 100%;
-            font-size: 1rem;
-        }
         p {
             width: 100%;
             font-size: .85rem;
@@ -72,5 +81,14 @@
         a {
             font-size: .85rem;
         }
+    }
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .btnDark {
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 1rem;
     }
 }
